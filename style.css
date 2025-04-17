@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.left-container{
+  background-image: url(./images/plants.jpg);
+  background-size: cover;
+  width: 70%;
+  height: 100vh;
+}
+
+.logo{
+  width: auto;
+  height: 20vh;
+  background-image: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:not([required]) {
+  border-color: #E5E7EB;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.lets-do-this-container{
+  margin-left: -25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 10px 15px 5px rgba(0,0,0,0.2);
+}
+
+.form-container{
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.labels{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.text-input{
+  border-color: gray;
+  border-radius: 3PX;
+  padding: 5px 10px;
+}
+
+button{
+
+}

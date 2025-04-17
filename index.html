@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <!-- <img src="./images/plants.jpg" style="width: auto; height: 100vh; display: block;"> -->
+            <img src="./images/odin-lined.png" class="logo">
+            <p>ODIN</p>
+        </div>
+        <div class="right-container">
+            <div>
+                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <div class="lets-do-this-container">
+                <h2 style="margin-left: 25px;">Let's do this!</h2>
+                <form action="#" method="post">
+                    <div class="form-container">
+                        <div class="labels">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" class="text-input" name="first_name" id="first_name">
+                        </div>
+                        <div class="labels">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" class="text-input" name="last_name" id="last_name">
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <div class="labels">
+                            <label for="email">EMAIL</label>
+                            <input type="email" class="text-input" name="email" id="email">
+                        </div>
+                        <div class="labels">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" class="text-input" name="phone_number" pattern="^(\d{3}-?\d{3}-?\d{4})$" id="phone_number">
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <div class="labels">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" class="text-input" name="password" id="password" required>
+                        </div>
+                        <div class="labels">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="text" class="text-input" name="confirm_password" id="confirm_password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button>Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
