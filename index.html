@@ -10,8 +10,10 @@
     <div class="main-container">
         <div class="left-container">
             <!-- <img src="./images/plants.jpg" style="width: auto; height: 100vh; display: block;"> -->
-            <img src="./images/odin-lined.png" class="logo">
-            <p>ODIN</p>
+             <div class="logo-background">
+                <img src="./images/odin-lined.png" class="logo">
+                <p id="logo-text">ODIN</p>
+            </div>
         </div>
         <div class="right-container">
             <div>
@@ -21,42 +23,47 @@
             <div class="lets-do-this-container">
                 <h2 style="margin-left: 25px;">Let's do this!</h2>
                 <form action="#" method="post">
-                    <div class="form-container">
-                        <div class="labels">
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" class="text-input" name="first_name" id="first_name">
+                    <fieldset>
+                        <div class="form-container">
+                            <div class="labels">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" class="text-input" name="first_name" id="first_name">
+                            </div>
+                            <div class="labels">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" class="text-input" name="last_name" id="last_name">
+                            </div>
                         </div>
-                        <div class="labels">
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" class="text-input" name="last_name" id="last_name">
+                        <div class="form-container">
+                            <div class="labels">
+                                <label for="email">EMAIL</label>
+                                <input type="email" class="text-input" name="email" id="email">
+                            </div>
+                            <div class="labels">
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <input type="tel" class="text-input" name="phone_number" pattern="^(\d{3}-?\d{3}-?\d{4})$" title="Please enter a valid phone number (e.g. 123-456-7890 or 1234567890)" placeholder="123-456-7890" id="phone_number">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-container">
-                        <div class="labels">
-                            <label for="email">EMAIL</label>
-                            <input type="email" class="text-input" name="email" id="email">
+                        <div class="form-container">
+                            <div class="labels">
+                                <label for="password">PASSWORD</label>
+                                <input type="text" class="text-input" name="password" id="password" required>
+                            </div>
+                            <div class="labels">
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="text" class="text-input" name="confirm_password" id="confirm_password" required>
+                            </div>
                         </div>
-                        <div class="labels">
-                            <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" class="text-input" name="phone_number" pattern="^(\d{3}-?\d{3}-?\d{4})$" id="phone_number">
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <div class="labels">
-                            <label for="password">PASSWORD</label>
-                            <input type="text" class="text-input" name="password" id="password" required>
-                        </div>
-                        <div class="labels">
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="text" class="text-input" name="confirm_password" id="confirm_password" required>
-                        </div>
+                    </fieldset>
+            </div>
+                    <div>
+                        <fieldset>
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </fieldset>
+                        
                     </div>
                 </form>
-            </div>
-            <div>
-                <button>Create Account</button>
-                <p>Already have an account? Log in</p>
-            </div>
         </div>
     </div>
 </body>
